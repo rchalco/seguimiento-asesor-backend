@@ -12,20 +12,19 @@ namespace VectorStinger.Application.UserCase.Security.ValidateToken
     public class ValidateTokenUseCase : BaseUseCase<ValidateTokenInput, ValidateTokenOutPut, ValidateTokenValidation>
     {
         IAccountManager _accountManager;
-        IPaymentTransaction _paymentTransaction;
 
         public ValidateTokenUseCase(
             ValidateTokenInput userCaseInput,
             ValidateTokenValidation validationRules,
             IRepository repository,
             IAccountManager accountManager,
-            IPaymentTransaction paymentTransaction,
+           
              ILogger<ValidateTokenUseCase> logger)
             : base(userCaseInput, validationRules, repository, logger)
         {
             Description = $"Realiza la validacion de un token";
             _accountManager = accountManager;
-            _paymentTransaction = paymentTransaction;
+           
         }
 
         public override async Task<Result<ValidateTokenOutPut>> ExecuteBusinessAsync(ValidateTokenInput input)
