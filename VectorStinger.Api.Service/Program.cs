@@ -106,7 +106,7 @@ public class Program
 
         //app.UseAuthorization();
         //configurar middleware para manejar la seguridad       
-        app.UseMiddleware<SessionTokenValidationMiddleware>();
+        //app.UseMiddleware<SessionTokenValidationMiddleware>();
 
         foreach (var service in userCaseTypes)
         {
