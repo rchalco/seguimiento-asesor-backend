@@ -15,6 +15,13 @@
     <ProjectReference Include="../VectorStinger.Infrastructure.OAuth/VectorStinger.Infrastructure.OAuth.csproj" />
     <ProjectReference Include="../VectorStinger.Modules.Security/VectorStinger.Modules.Security.csproj" />
     <ProjectReference Include="../VectorStinger.Foundation.Abstractions/VectorStinger.Foundation.Abstractions.csproj" />
+    <ProjectReference Include="..\VectorStinger.Modules.SeguimientoAsesor\VectorStinger.Modules.SeguimientoAsesor.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UserCase\SeguimientoAsesor\PreEvaluarCliente\" />
+    <Folder Include="UserCase\SeguimientoAsesor\RegistrarCliente\" />
+    <Folder Include="UserCase\SeguimientoAsesor\RegistrarLead\" />
   </ItemGroup>
 
 </Project>

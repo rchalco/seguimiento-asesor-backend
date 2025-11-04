@@ -12,6 +12,7 @@ using VectorStinger.Foundation.Abstractions.Manager;
 using VectorStinger.Foundation.Abstractions.UserCase;
 using System;
 using System.Reflection;
+using VectorStinger.Modules.SeguimientoAsesor.Configuration;
 
 namespace VectorStinger.Application.Configurations
 {
@@ -35,6 +36,7 @@ namespace VectorStinger.Application.Configurations
 
             Assembly assemblyApplication = typeof(VectorStingerMain).Assembly;
             Assembly assemblySecurity = typeof(SecurityMain).Assembly;
+            Assembly assemblySeguimientoAsesor = typeof(SeguimientoAsesorMain).Assembly;
             Assembly assemblyKernel = typeof(VectorStingerCoreMain).Assembly;
 
             // register the configuration for oauth
